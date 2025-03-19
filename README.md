@@ -34,16 +34,16 @@ conda env update --file environment.yml --name base # conda env export > environ
 
 ```bash
 # 运行
-python main.py
+python src/main.py
 
 # 可执行文件
-pyinstaller --onefile main.py # 当前平台
-pyinstaller --onefile --name app-windows.exe main.py # 指定平台
-pyinstaller --onefile --name app-linux main.py
-pyinstaller --onefile --name app-macos main.py
+pyinstaller --onefile src/main.py # 当前平台
+pyinstaller --onefile --name app-windows.exe src/main.py # 指定平台
+pyinstaller --onefile --name app-linux src/main.py
+pyinstaller --onefile --name app-macos src/main.py
 
 # 检查 (可选)
-pylint main.py
+pylint src/main.py
 
 # 测试 (可选)
 # 略

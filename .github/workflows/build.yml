@@ -32,9 +32,9 @@ jobs:
     - name: 04. Build executable
       run: |
         if [[ "${{ runner.os }}" == "Windows" ]]; then
-          pyinstaller --onefile --name myapp-${{ runner.os }}.exe src/app.py
+          pyinstaller --onefile --name myapp-${{ runner.os }}.exe src/main.py
         else
-          pyinstaller --onefile --name myapp-${{ runner.os }} src/app.py
+          pyinstaller --onefile --name myapp-${{ runner.os }} src/main.py
         fi
 
     - name: Upload artifact
