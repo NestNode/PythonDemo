@@ -41,4 +41,10 @@ pyinstaller --onefile main.py # 当前平台
 pyinstaller --onefile --name app-windows.exe main.py # 指定平台
 pyinstaller --onefile --name app-linux main.py
 pyinstaller --onefile --name app-macos main.py
+
+# 检查 (可选)
+pylint main.py
+
+# 测试 (可选)
+# 略
 ```
