@@ -34,5 +34,8 @@ pip install -r .\requirements.txt # pip freeze > requirements.txt
 python main.py
 
 # 可执行文件
-pyinstaller --onefile main.py
+pyinstaller --onefile main.py # 当前平台
+pyinstaller --onefile --name app-windows.exe main.py # 指定平台
+pyinstaller --onefile --name app-linux main.py
+pyinstaller --onefile --name app-macos main.py
 ```
