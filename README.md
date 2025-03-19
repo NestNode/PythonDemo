@@ -25,6 +25,9 @@ conda 24.9.2
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r .\requirements.txt # pip freeze > requirements.txt
+
+# 如果是第二种情况且你用conda且项目有 environment.yml，也可以这样:
+conda env update --file environment.yml --name base # conda env export > environment.yml
 ```
 
 编译/运行
