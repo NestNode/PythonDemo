@@ -34,7 +34,7 @@ conda env update --file environment.yml --name base # conda env export > environ
 
 ```bash
 # 运行
-python src/main.py
+python src/main.py # 由于这里是flask项目，也可以替换成 flask run
 
 # 可执行文件
 pyinstaller --onefile src/main.py # 当前平台
